@@ -1,0 +1,180 @@
+<!-- Default Footer -->
+<footer
+    class="footer-wrap style2 pt-100"
+    [ngClass]="{'d-none': router.url === '/index-2'}"
+>
+    <img src="assets/img/footer-map.png" alt="Image" class="footer-shape-one">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row pb-75">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 pe-xl-5">
+                    <div class="footer-widget">
+                        <a routerLink="/" class="footer-logo">
+                            <img src="assets/img/logo-white.png" width="60" alt="Image">
+                        </a>
+                        <p class="comp-desc">
+                            Avec l’envie de faire face à la situation de manque de logement, combinée à
+                            la forte demande de logement, nous vous donnons accès à un ensemble de programmes répondant à vos besoins
+                        </p>
+                        <h6>Langues</h6>
+                        <div class="select-lang">
+                            <div class="navbar-option-item navbar-language dropdown language-option">
+                                <div mdbDropdown class="dropdown">
+                                    <a
+                                        class="dropdown-toggle"
+                                        role="button"
+                                        mdbDropdownToggle
+                                        aria-expanded="false"
+                                    >
+                                        <img src="assets/img/france.png" alt="flag">
+                                        Français
+                                    </a>
+                                    <ul mdbDropdownMenu class="dropdown-menu footer-language-dropdown">
+                                        <li><a class="dropdown-item" href="javascript:void(0)">
+                                            <img src="assets/img/france.png" alt="flag">
+                                            Français
+                                        </a></li>
+                                        <li><a class="dropdown-item" href="javascript:void(0)">
+                                            <img src="assets/img/uk.png" alt="flag">
+                                            Anglais
+                                        </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-6 col-md-6 col-sm-6">
+                    <div class="footer-widget">
+                        <h3 class="footer-widget-title">Villes</h3>
+                        <ul class="footer-menu list-style">
+                            <li>
+                                <a routerLink="/listings-one">
+                                    <i class="ri-arrow-right-s-line"></i>
+                                    Dakar
+                                </a>
+                            </li>
+                            <li>
+                                <a routerLink="/listings-one">
+                                    <i class="ri-arrow-right-s-line"></i>
+                                    Rufisque
+                                </a>
+                            </li>
+                            <li>
+                                <a routerLink="/listings-one">
+                                    <i class="ri-arrow-right-s-line"></i>
+                                    Thies
+                                </a>
+                            </li>
+                            <li>
+                                <a routerLink="/listings-one">
+                                    <i class="ri-arrow-right-s-line"></i>
+                                    Mbour
+                                </a>
+                            </li>
+                            <li>
+                                <a routerLink="/listings-one">
+                                    <i class="ri-arrow-right-s-line"></i>
+                                    Almadies 2
+                                </a>
+                            </li>
+                            <li>
+                                <a routerLink="/listings-one">
+                                    <i class="ri-arrow-right-s-line"></i>
+                                    Diourbel
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 ps-xl-5">
+                    <div class="footer-widget">
+                        <h3 class="footer-widget-title">Liens utiles</h3>
+                        <ul class="footer-menu list-style">
+                            <li>
+                                <a routerLink="/about">
+                                    <i class="ri-arrow-right-s-line"></i>
+                                    A propos
+                                </a>
+                            </li>
+                            <li>
+                                <a routerLink="/agents">
+                                    <i class="ri-arrow-right-s-line"></i>
+                                    Témoignages
+                                </a>
+                            </li>
+                            <li>
+                                <a routerLink="/blog">
+                                    <i class="ri-arrow-right-s-line"></i>
+                                    Faq
+                                </a>
+                            </li>
+                            <li>
+                                <a routerLink="/contact">
+                                    <i class="ri-arrow-right-s-line"></i>
+                                    Contacts
+                                </a>
+                            </li>
+                            <li>
+                                <a routerLink="/privacy-policy">
+                                    <i class="ri-arrow-right-s-line"></i>
+                                    Politique de confidentialité
+                                </a>
+                            </li>
+                            <li>
+                                <a routerLink="/terms-of-service">
+                                    <i class="ri-arrow-right-s-line"></i>
+                                    Termes &amp; Conditions
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                    <div class="footer-widget">
+                        <div class="comp-map">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15433.842859365568!2d-17.255365068864055!3d14.743054473553357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec19f80450dcc01%3A0xc14790801366de52!2sKeur%20Ndiaye%20Lo%2C%20Senegal!5e0!3m2!1sen!2sbd!4v1699196199812!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="footer-bottom">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="copyright-text">
+                        © SEN CASA - Edité par <a href="https://cin-soft.com/" target="_blank">CIN SOFT</a>
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="social-profile list-style style1">
+                        <li>
+                            <a target="_blank" href="https://facebook.com">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://twitter.com">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://instagram.com">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://linkedin.com">
+                                <i class="ri-linkedin-fill"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

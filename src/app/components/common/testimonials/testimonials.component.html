@@ -1,0 +1,380 @@
+<!-- Default Testimonials -->
+<div
+    class="testimonial-wrap style2 ptb-100 bg-seashell"
+    [ngClass]="{'d-none': router.url === '/index-2' || router.url === '/index-3'}"
+>
+    <div class="container">
+       <div class="row">
+            <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
+                <div class="section-title style1 text-center mb-40">
+                    <h2>What Our Users Say About Us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua adipiscing elit. </p>
+                </div>
+            </div>
+       </div>
+    </div>
+    <div class="container-fluid">
+        <div class="testimonial-slider-two">
+            <owl-carousel-o [options]="testimonialSlidesTwo">
+                <ng-template carouselSlide>
+                    <div class="testimonial-card style2">
+                        <h6>Best! I Got My Dream House I Wanted Through Enuf</h6>
+                        <p class="client-quote">
+                            Lorem ipsum dolor sit amet adip elitions repellat tetur delni vel quam aliq earum explibo dolor eme fugiat enim illumon amet sit.
+                        </p>
+                        <div class="client-info-wrap">
+                            <div class="client-img">
+                                <img src="assets/img/clients/client-2.jpg" alt="Image">
+                            </div>
+                            <div class="client-info">
+                                <h5>David Watson</h5>
+                                <span>Director, BAT</span>
+                            </div>
+                            <div class="ratings">
+                                <i class="flaticon-star"></i>
+                                4.8
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="testimonial-card style2">
+                        <h6>Awesome! Really Got What I Wanted Through Enuf</h6>
+                        <p class="client-quote">
+                            Lorem ipsum dolor sit amet adip elitions repellat tetur delni vel quam aliq earum explibo dolor eme fugiat enim illumon amet sit.
+                        </p>
+                        <div class="client-info-wrap">
+                            <div class="client-img">
+                                <img src="assets/img/clients/client-3.jpg" alt="Image">
+                            </div>
+                            <div class="client-info">
+                                <h5>Tom Haris</h5>
+                                <span>Civil Engineer, Olleo</span>
+                            </div>
+                            <div class="ratings">
+                                <i class="flaticon-star"></i>
+                                4.8
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="testimonial-card style2">
+                        <h6>Good Job! I'll Recommend Your Service To My Friends</h6>
+                        <p class="client-quote">
+                            Lorem ipsum dolor sit amet adip elitions repellat tetur delni vel quam aliq earum explibo dolor eme fugiat enim illumon amet sit.
+                        </p>
+                        <div class="client-info-wrap">
+                            <div class="client-img">
+                                <img src="assets/img/clients/client-1.jpg" alt="Image">
+                            </div>
+                            <div class="client-info">
+                                <h5>Chris Jackson</h5>
+                                <span>Enterpreneur</span>
+                            </div>
+                            <div class="ratings">
+                                <i class="flaticon-star"></i>
+                                4.8
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="testimonial-card style2">
+                        <h6>Appreciate! I got the house I wanted through Enuf</h6>
+                        <p class="client-quote">
+                            Lorem ipsum dolor sit amet adip elitions repellat tetur delni vel quam aliq earum explibo dolor eme fugiat enim illumon amet sit.
+                        </p>
+                        <div class="client-info-wrap">
+                            <div class="client-img">
+                                <img src="assets/img/clients/client-4.jpg" alt="Image">
+                            </div>
+                            <div class="client-info">
+                                <h5>Robert Muller</h5>
+                                <span>MD, ITec</span>
+                            </div>
+                            <div class="ratings">
+                                <i class="flaticon-star"></i>
+                                4.8
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="testimonial-card style2">
+                        <h6>Best! I Got My Dream House Through Enuf</h6>
+                        <p class="client-quote">
+                            Lorem ipsum dolor sit amet adip elitions repellat tetur delni vel quam aliq earum explibo dolor eme fugiat enim illumon amet sit.
+                        </p>
+                        <div class="client-info-wrap">
+                            <div class="client-img">
+                                <img src="assets/img/clients/client-5.jpg" alt="Image">
+                            </div>
+                            <div class="client-info">
+                                <h5>Mark Owen</h5>
+                                <span>Enterpreneur</span>
+                            </div>
+                            <div class="ratings">
+                                <i class="flaticon-star"></i>
+                                4.5
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+</div>
+
+<!-- Testimonials Section for Home Demo - 2 -->
+<div
+    class="testimonial-wrap ptb-100 d-none"
+    [ngClass]="{'d-block': router.url === '/index-2'}"
+>
+    <img src="assets/img/shape-1.png" alt="Image" class="testimonial-shape-one">
+    <div class="container">
+        <div class="section-title style1 text-center mb-40">
+            <span>See Our Reviews</span>
+            <h2>What Our Users Say About Us</h2>
+        </div>
+        <div class="testimonial-slider-one">
+            <owl-carousel-o [options]="testimonialSlidesOne">
+                <ng-template carouselSlide>
+                    <div class="testimonial-card style1">
+                        <div class="client-img">
+                            <img src="assets/img/clients/client-1.jpg" alt="Image">
+                        </div>
+                        <div class="quote-wrap">
+                            <p class="client-quote">
+                                Lorem ipsum dolor sit amet adip elitions repellat tetur delni vel quam aliq earum explibo dolor eme fugiat enim illumon.
+                            </p>
+                            <div class="client-info-wrap">
+                                <div class="client-info">
+                                    <h5>Alexandar Mason</h5>
+                                    <span>Managing Director, IBAC</span>
+                                </div>
+                                <div class="ratings">
+                                    <i class="flaticon-star"></i>
+                                    4.8
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="testimonial-card style1">
+                        <div class="client-img">
+                            <img src="assets/img/clients/client-2.jpg" alt="Image">
+                        </div>
+                        <div class="quote-wrap">
+                            <p class="client-quote">
+                                Lorem ipsum dolor sit amet adip elitions repellat tetur delni vel quam aliq earum explibo dolor eme fugiat enim illumon.
+                            </p>
+                            <div class="client-info-wrap">
+                                <div class="client-info">
+                                    <h5>David Watson</h5>
+                                    <span>Director, BAT</span>
+                                </div>
+                                <div class="ratings">
+                                    <i class="flaticon-star"></i>
+                                    4.7
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="testimonial-card style1">
+                        <div class="client-img">
+                            <img src="assets/img/clients/client-3.jpg" alt="Image">
+                        </div>
+                        <div class="quote-wrap">
+                            <p class="client-quote">
+                                Lorem ipsum dolor sit amet adip elitions repellat tetur delni vel quam aliq earum explibo dolor eme fugiat enim illumon.
+                            </p>
+                            <div class="client-info-wrap">
+                                <div class="client-info">
+                                    <h5>Tom Haris</h5>
+                                    <span>Civil Engineer, Olleo</span>
+                                </div>
+                                <div class="ratings">
+                                    <i class="flaticon-star"></i>
+                                    4.7
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="testimonial-card style1">
+                        <div class="client-img">
+                            <img src="assets/img/clients/client-4.jpg" alt="Image">
+                        </div>
+                        <div class="quote-wrap">
+                            <p class="client-quote">
+                                Lorem ipsum dolor sit amet adip elitions repellat tetur delni vel quam aliq earum explibo dolor eme fugiat enim illumon.
+                            </p>
+                            <div class="client-info-wrap">
+                                <div class="client-info">
+                                    <h5>Chris Jackson</h5>
+                                    <span>Enterpreneur</span>
+                                </div>
+                                <div class="ratings">
+                                    <i class="flaticon-star"></i>
+                                    4.9
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="testimonial-card style1">
+                        <div class="client-img">
+                            <img src="assets/img/clients/client-5.jpg" alt="Image">
+                        </div>
+                        <div class="quote-wrap">
+                            <p class="client-quote">
+                                Lorem ipsum dolor sit amet adip elitions repellat tetur delni vel quam aliq earum explibo dolor eme fugiat enim illumon.
+                            </p>
+                            <div class="client-info-wrap">
+                                <div class="client-info">
+                                    <h5>Robert Muller</h5>
+                                    <span>MD, ITec</span>
+                                </div>
+                                <div class="ratings">
+                                    <i class="flaticon-star"></i>
+                                    4.9
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="testimonial-card style1">
+                        <div class="client-img">
+                            <img src="assets/img/clients/client-6.jpg" alt="Image">
+                        </div>
+                        <div class="quote-wrap">
+                            <p class="client-quote">
+                                Lorem ipsum dolor sit amet adip elitions repellat tetur delni vel quam aliq earum explibo dolor eme fugiat enim illumon.
+                            </p>
+                            <div class="client-info-wrap">
+                                <div class="client-info">
+                                    <h5>Mark Owen</h5>
+                                    <span>Enterpreneur</span>
+                                </div>
+                                <div class="ratings">
+                                    <i class="flaticon-star"></i>
+                                    4.9
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+</div>
+
+<!-- Testimonials Section for Home Demo - 3 -->
+<div
+    class="testimonial-wrap style2 ptb-100 bg-seashell d-none"
+    [ngClass]="{'d-block': router.url === '/index-3'}"
+>
+    <div class="container">
+       <div class="row">
+            <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
+                <div class="section-title style2 text-center mb-40">
+                    <span>SEE OUR REVIEW</span>
+                    <h2>What Our Users Say About Us</h2>
+                </div>
+            </div>
+       </div>
+    </div>
+    <div class="container-fluid">
+        <div class="testimonial-slider-three">
+            <owl-carousel-o [options]="testimonialSlidesThree">
+                <ng-template carouselSlide>
+                    <div class="testimonial-card style3">
+                        <p class="client-quote">
+                            Lorem ipsum dolor sit amet adip elitions repellat tetur delni vel quam aliq earum explibo dolor eme fugiat enim illumon amet sit.
+                        </p>
+                        <div class="client-info-wrap">
+                            <div class="client-img">
+                                <img src="assets/img/clients/client-1.jpg" alt="Image">
+                            </div>
+                            <div class="client-info">
+                                <h5>David Watson</h5>
+                                <span>Director, BAT</span>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="testimonial-card style3">
+                        <p class="client-quote">
+                            Lorem ipsum dolor sit amet adip elitions repellat tetur delni vel quam aliq earum explibo dolor eme fugiat enim illumon amet sit.
+                        </p>
+                        <div class="client-info-wrap">
+                            <div class="client-img">
+                                <img src="assets/img/clients/client-3.jpg" alt="Image">
+                            </div>
+                            <div class="client-info">
+                                <h5>Tom Haris</h5>
+                                <span>Civil Engineer, Olleo</span>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="testimonial-card style3">
+                        <p class="client-quote">
+                            Lorem ipsum dolor sit amet adip elitions repellat tetur delni vel quam aliq earum explibo dolor eme fugiat enim illumon amet sit.
+                        </p>
+                        <div class="client-info-wrap">
+                            <div class="client-img">
+                                <img src="assets/img/clients/client-2.jpg" alt="Image">
+                            </div>
+                            <div class="client-info">
+                                <h5>Chris Jackson</h5>
+                                <span>Enterpreneur</span>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="testimonial-card style3">
+                        <p class="client-quote">
+                            Lorem ipsum dolor sit amet adip elitions repellat tetur delni vel quam aliq earum explibo dolor eme fugiat enim illumon amet sit.
+                        </p>
+                        <div class="client-info-wrap">
+                            <div class="client-img">
+                                <img src="assets/img/clients/client-4.jpg" alt="Image">
+                            </div>
+                            <div class="client-info">
+                                <h5>Robert Muller</h5>
+                                <span>MD, ITec</span>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="testimonial-card style3">
+                        <p class="client-quote">
+                            Lorem ipsum dolor sit amet adip elitions repellat tetur delni vel quam aliq earum explibo dolor eme fugiat enim illumon amet sit.
+                        </p>
+                        <div class="client-info-wrap">
+                            <div class="client-img">
+                                <img src="assets/img/clients/client-5.jpg" alt="Image">
+                            </div>
+                            <div class="client-info">
+                                <h5>Mark Owen</h5>
+                                <span>Enterpreneur</span>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+</div>

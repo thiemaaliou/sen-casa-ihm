@@ -1,0 +1,66 @@
+<div class="advantage-wrap pt-50" id="programs">
+    <div class="w-100">
+        <div class="section-title style1 text-center mb-40">
+            <div class="main-bg-title">
+                <sup>AK</sup>
+                <h2 id="main-title">Jounée</h2>
+            </div>
+            <div class="sec-bg-title">
+                <h4 class="secondary-title">2000<sub>FCFA</sub></h4>
+            </div>
+        </div>
+
+        <div class="row justify-content-justify main-bg-section">
+            <div class="col-9 text-center mt-10 container">
+                <h4>NATT-K&Euml;R</h4>
+                <p>
+                    Avec l'envie de faire face à la situation de manque de logement, combiné à la forte demande boostée par l'accroissement de la population
+                    ainsi que l'attractivité du Sénégal, la <strong>SARTORISEN </strong> vous met en place un système de cotisation appelé <strong>NATT-K&Euml;R</strong>
+                    qui vous permet, à partir de <strong>2000 FCFA</strong> par  jour de <strong> <q>CONSTRUIRE VOTRE MAISON</q> </strong>
+                </p>
+            </div>
+        </div>
+        <div class="section-title style1 text-center mb-40 pt-40">
+            <div class="sec-bg-title mb-20">
+                <h4 class="secondary-title">Kuné ak sa K&Euml;R</h4>
+            </div>
+        </div>
+        <div class="row justify-content-justify white-bg-section">
+            <div class="col-lg-10 col-md-11 col-sm-12 col-xs-12 text-justify mt-10 container">
+                <div class="row programs-container">
+                    <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12" *ngFor="let program of programs">
+                        <div class="card">
+                            <img src="{{program?.main_image}}" alt="">
+                            <div class="card-content">
+                                <h4 class="title">{{program?.name}} à <span>{{program?.solde}} FCFA</span></h4>
+                                <p class="location"><i class="ri-map-pin-4-fill"></i> {{program?.location}}</p>
+                                <p class="amount">Avec <span>{{program?.minimum_save}}</span>/jour pendant <span>{{program?.duration}}</span> mois</p>
+                                <div class="description-html" [innerHTML]="program?.description"></div>
+                                <div class="button">
+                                    <button class="subscribe-button"  (click)="goToListing(program)">S'inscrire</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-title style1 text-center mb-40 pt-40">
+            <!-- <div class="sec-bg-title mb-20">
+                <h4 class="secondary-title">Kuné ak sa K&Euml;R</h4>
+            </div> -->
+            <div class="payment-logo ">
+                <h4>Nos partenaires</h4>
+                <div class="row partners-logo">
+                    <div class="col logo" *ngFor="let logo of partnersLogo">
+                        <img src="{{logo}}" alt="" >
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex ptb-40">
+                <button class="main-contact-btn" (click)="openModalContact()">CONTACTS</button>
+            </div>
+        </div>
+    </div>
+</div>

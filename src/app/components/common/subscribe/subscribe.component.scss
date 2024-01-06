@@ -1,0 +1,142 @@
+%flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.newsletter-wrap {
+    position: relative;
+    z-index: 1;
+
+    .newsletter-shape-one {
+        top: 0;
+        left: 0;
+        z-index: -1;
+        position: absolute;
+    }
+}
+.newsletter-form {
+    position: relative;
+    @extend %flex;
+    z-index: 1;
+
+    .form-group {
+        width: calc(39% - 15px);
+        margin-right: 25px;
+        
+        input {
+            width: 100%;
+            border: none;
+            height: 56px;
+            padding: 10px 20px;
+            background-color: var(--clr_white);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.09);
+
+            &::placeholder {
+                transition: .5s;
+            }
+            &:focus {
+                &::placeholder {
+                    color: transparent;
+                }
+            }
+        }
+        &:last-child {
+            margin-right: 0;
+            width: 20%;
+
+            button {
+                &.btn {
+                    width: 100%;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .newsletter-wrap {
+        .newsletter-shape-one {
+            display: none;
+        }
+    }
+    .newsletter-form {
+        .form-group {
+            width: 100%;
+            margin: {
+                right: 0;
+                bottom: 15px;
+            };
+            input {
+                font-size: 14px;
+                height: 50px;
+                padding: {
+                    left: 15px;
+                    right: 15px;
+                };
+            }
+            &:last-child {
+                width: 100%;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .newsletter-wrap {
+        .newsletter-shape-one {
+            display: none;
+        }
+    }
+    .newsletter-form {
+        .form-group {
+            width: calc(50% - 15px);
+            margin-right: 25px;
+            
+            input {
+                height: 55px;
+                font-size: 15px;
+                padding: {
+                    left: 15px;
+                    right: 15px;
+                };
+            }
+            &:nth-child(2) {
+                margin-right: 0;
+            }
+            &:last-child {
+                width: 100%;
+                margin-top: 25px;
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .newsletter-form {
+        .form-group {
+            width: calc(38% - 15px);
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

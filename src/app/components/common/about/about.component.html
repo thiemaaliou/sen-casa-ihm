@@ -1,0 +1,70 @@
+<!-- Default Section -->
+<div
+    class="about-wrap style1 ptb-100 bg-seashell"
+    [ngClass]="{'d-none': router.url === '/index-3'}"
+>
+    <img src="assets/img/about/shape-3.png" alt="Image" class="about-shape-three">
+    <div class="container">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6 col-md-12">
+                <div class="about-img-wrap">
+                    <img src="assets/img/about/shape-1.png" alt="Image" class="about-shape-one rotate">
+                    <img src="assets/img/about/shape-2.png" alt="Image" class="about-shape-two bounce">
+                    <img src="assets/img/about/about-img-1.jpg" alt="Iamge" class="about-img-one">
+                    <img src="assets/img/about/about-img-2.jpg" alt="Iamge" class="about-img-two">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="about-content">
+                    <div class="content-title style1">
+                        <span>About Us</span>
+                        <h2>Enjoy Our Property For A Weekend Longer Stay</h2>
+                        <p>Best Strategic planning dolor sit amet consectetur adipiscing elit. Scel erus isque ametus odio velit auctor nam elit nulla eget sodales dui pulvinar. Best strategic planning dolor sit sectetur morethe.</p>
+                    </div>
+                    <ul class="content-feature-list list-style">
+                        <li><i class="flaticon-checked"></i> We have a strong customer support in 24/7 days</li>
+                        <li><i class="flaticon-checked"></i>We offer wonderful homes with furnitures.</li>
+                        <li><i class="flaticon-checked"></i>Private balconies with stunning views</li>
+                        <li><i class="flaticon-checked"></i>Smart Home Design & Beautiful Scene Around</li>
+                    </ul>
+                    <a routerLink="/about" class="btn style2">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Section for Home Demo - 3 -->
+<div
+    class="about-wrap style2 pt-100 bg-seashell d-none"
+    [ngClass]="{'d-block': router.url === '/index-3'}"
+>
+    <div class="container">
+        <div class="about-box">
+            <img src="assets/img/about/about-shape-3.png" alt="Image" class="about-shape-three">
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-img-wrap about-bg-1 bg-f" style="background-image: url(assets/img/about/about-img-3.jpg);">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <div class="content-title style2">
+                            <span>ABOUT US</span>
+                            <h2>Enjoy Our Property For A Weekend Longer Stay</h2>
+                            <p>Best Strategic planning dolor sit amet consectetur adipiscing elit. Scel erus isque ametus odio velit auctor nam elit nulla eget sodales dui pulvinar. Best strategic planning dolor sit sectetur.</p>
+                        </div>
+                        <ul class="content-feature-list list-style">
+                            <li><i class="flaticon-checked"></i> We have a strong customer support in 24/7 days</li>
+                            <li><i class="flaticon-checked"></i>We offer wonderful homes with furnitures.</li>
+                            <li><i class="flaticon-checked"></i>Private balconies with stunning views</li>
+                            <li><i class="flaticon-checked"></i>Smart Home Design & Beautiful Scene Around</li>
+                        </ul>
+                        <a routerLink="/about" class="btn style2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <app-funfacts></app-funfacts>
+</div>

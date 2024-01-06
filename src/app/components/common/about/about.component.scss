@@ -1,0 +1,265 @@
+@mixin transform($tr_amt) {
+    -webkit-transform: $tr_amt;
+    -moz-transform: $tr_amt;
+    transform: $tr_amt;
+}
+.about-wrap {
+    .about-content {
+        .content-title {
+            margin-bottom: 25px;
+        }
+        .content-feature-list {
+            margin-bottom: 35px;
+
+            li {
+                font-weight: 600;
+                color: var(--clr_black);
+            }
+        }
+    }
+    &.style1 {
+        position: relative;
+
+        .about-shape-three {
+            position: absolute;
+            bottom: 50px;
+            right: 50px;
+        }
+        .about-img-wrap {
+            z-index: 1;
+            position: relative;
+            padding-bottom: 150px;
+
+            .about-shape-one {
+                bottom: 0;
+                left: 50px;
+                z-index: 1;
+                position: absolute;
+            }
+            .about-shape-two {
+                top: 60px;
+                right: 50px;
+                z-index: -1;
+                position: absolute;
+            }
+            .about-img-one {
+                width: calc(100% - 120px);
+                margin-right: auto;
+                border-radius: 5px;
+            }
+            .about-img-two {
+                border-radius: 5px;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }
+    }
+    &.style2 {
+        .about-box {
+            background-color: var(--clr_white);
+            position: relative;
+            z-index: 1;
+
+            .about-shape-three {
+                position: absolute;
+                z-index: -1;
+                bottom: 0;
+                right: 0;
+            }
+            .about-content {
+                padding-right: 40px;
+            }
+            .about-img-wrap {
+                position: relative;
+                height: 640px;
+
+                &:before {
+                    top: 0;
+                    content: "";
+                    width: 20px;
+                    height: 100%;
+                    position: absolute;
+                    left: calc(50% - 10px);
+                    background-color: var(--clr_white);
+                    @include transform(trasnlateX(-50%));
+                }
+            }
+        }
+    }
+    &.style3 {
+        .about-img-wrap {
+            margin: 0;
+
+            .about-bg-2, .about-bg-3, .about-bg-4 {
+                height: 500px;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+.d-none {
+    &.d-block {
+        display: block !important;
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .about-wrap {
+        .about-content {
+            margin-top: 25px;
+
+            .content-title {
+                margin-bottom: 15px;
+            }
+            .content-feature-list {
+                margin-bottom: 15px;
+            }
+        }
+        &.style1 {
+            .about-shape-three {
+                display: none;
+            }
+            .about-img-wrap {
+                padding-bottom: 80px;
+    
+                .about-shape-one {
+                    display: none;
+                }
+                .about-shape-two {
+                    display: none;
+                }
+                .about-img-one {
+                    width: calc(100% - 40px);
+                }
+                .about-img-two {
+                    width: 210px;
+                }
+            }
+        }
+        &.style2 {
+            .about-box {
+                .about-content {
+                    padding: {
+                        left: 15px;
+                        right: 15px;
+                        bottom: 25px;
+                    };
+                }
+                .about-img-wrap {
+                    height: 400px;
+                }
+            }
+        }
+        &.style3 {
+            .about-img-wrap {
+                margin: 0;
+    
+                .about-bg-2, .about-bg-3, .about-bg-4 {
+                    height: 500px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .about-wrap {
+        .about-content {
+            margin-top: 25px;
+            
+            .content-title {
+                margin-bottom: 20px;
+            }
+            .content-feature-list {
+                margin-bottom: 25px;
+            }
+        }
+        &.style1 {
+            .about-shape-three {
+                display: none;
+            }
+        }
+        &.style2 {
+            .about-box {
+                .about-content {
+                    padding: {
+                        left: 20px;
+                        right: 20px;
+                    };
+                }
+                .about-img-wrap {
+                    height: 550px;
+                }
+            }
+        }
+        &.style3 {
+            .about-img-wrap {
+                margin: 0;
+    
+                .about-bg-2, .about-bg-3, .about-bg-4 {
+                    height: 500px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .about-wrap {
+        .about-content {
+            .content-title {
+                margin-bottom: 20px;
+            }
+            .content-feature-list {
+                margin-bottom: 25px;
+            }
+        }
+        &.style1 {
+            position: relative;
+    
+            .about-img-wrap {
+                .about-img-two {
+                    width: 300px;
+                }
+            }
+        }
+        &.style2 {
+            .about-box {
+                .about-content {
+                    padding-right: 30px;
+                }
+            }
+        }
+        &.style3 {
+            .about-img-wrap {
+                margin: 0;
+    
+                .about-bg-2, .about-bg-3, .about-bg-4 {
+                    height: 500px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

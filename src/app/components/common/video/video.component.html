@@ -1,0 +1,90 @@
+<!-- Default Section -->
+<div
+    class="video-wrap video-bg-1 style2 bg-f ptb-100"
+    style="background-image: url(assets/img/promo-video-bg.jpg);"
+    [ngClass]="{'d-none': router.url === '/index-2' || router.url === '/index-3' || router.url === '/about'}"
+>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
+                <div class="video-content">
+                    <button type="button" class="play-video" (click)="openPopup()">
+                        <span class="play-now icon"><i class="flaticon-play-1"></i>
+                        <span class="ripple"></span></span>
+                    </button>
+                    <div class="content-title">
+                        <span>Open Video</span>
+                        <h2>Attend A Virtual Open Apartments</h2>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
+
+<!-- Video Section for Home Demo - 2 -->
+<div
+    class="bg-seashell ptb-100 d-none"
+    [ngClass]="{'d-block': router.url === '/index-2' || router.url === '/about'}"
+>
+    <div class="container">
+        <div
+            class="video-wrap style1 video-bg-1 bg-f ptb-100"
+            style="background-image: url(assets/img/promo-video-bg.jpg);"
+        >
+            <div class="row align-items-center">
+                <div class="col-lg-7 col-md-8 order-lg-1 order-md-1 order-2">
+                    <div class="video-content">
+                        <div class="content-title style1">
+                            <span>Open Video</span>
+                            <h2>Attend A Virtual Open Apartments</h2>
+                            <p>Best Strategic planning dolor sit amet consectetur adipiscing elit. Scel erus isque ametus odio velit auctor nam elit nulla eget sodales dui pulvinar. Best strategic planning dolor sit amet.</p>
+                        </div>
+                        <a routerLink="/listings-two" class="btn style2">Explore Property</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-4 order-lg-2 order-md-2 order-1">
+                    <button type="button" class="play-video" (click)="openPopup()">
+                        <span class="play-now icon"><i class="flaticon-play-1"></i>
+                        <span class="ripple"></span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Video Section for Home Demo - 3 -->
+<div
+    class="video-wrap style3 ptb-100 d-none"
+    [ngClass]="{'d-block': router.url === '/index-3'}"
+>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8 offset-xl-2 col-lg-8 offset-lg-2">
+                <div class="section-title style2 text-center mb-40">
+                    <span>INTRO VIDEO</span>
+                    <h2>Enjoy Our Video Tour</h2>
+                </div>
+            </div>
+        </div>
+        <div class="outer">
+            <div class="video-bg video-bg-1 bg-f" style="background-image: url(assets/img/promo-video-bg-2.jpg);">
+                <button type="button" class="play-video" (click)="openPopup()">
+                    <span class="play-now icon"><i class="flaticon-play-1"></i>
+                    <span class="ripple"></span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Video Popup -->
+<div class="video-popup" *ngIf="isOpen">
+    <div class="popup-inner">
+        <iframe src="https://www.youtube.com/embed/XNQk1qt__Vw" title="Setup and Local Installation - React Nextjs Online Yoga Coaching &amp; Training Courses System" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <button (click)="closePopup()" type="button" class="close-btn">
+            <i class="ri-close-line"></i>
+        </button>
+    </div>
+</div>

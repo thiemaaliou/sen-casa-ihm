@@ -1,0 +1,135 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-wrap bg-f br-1" style="background-image: url(assets/img/breadcrumb/breadcrumb-1.jpg);">
+    <div class="container">
+        <div class="breadcrumb-title">
+            <h2>Programmes</h2>
+            <ul class="breadcrumb-menu list-style">
+                <li><a routerLink="/">Accueil</a></li>
+                <li>Programmes</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Listings -->
+<div class="listing-wrap ptb-100">
+    <div class="container">
+        <div class="row gx-5">
+            <div class="col-xl-8">
+                <div class="row align-items-center mb-25">
+                    <div class="col-md-8">
+                        <div class="profuct-result">
+                            <p>15 résultats trouvés</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="filter-item-cat">
+                            <select>
+                                <option value="1">Trier par les plus plus récents</option>
+                                <option value="2">Trier par les moins chers</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6" *ngFor="let program of programs">
+                        <div class="property-card style2">
+                            <div class="property-img">
+                                <img src="{{program?.image}}" alt="Image">
+                                <!-- <span class="property-status">For Rent</span> -->
+                            </div>
+                            <div class="property-info">
+                                <h3><a routerLink="/listing-details">{{program?.name}}</a></h3>
+                                <p><i class="flaticon-location"></i>{{program?.location}}, {{program?.municipality}} - {{program?.department}}</p>
+                                <ul class="property-metainfo list-style">
+                                    <li><i class="flaticon-double-bed"></i>{{program?.bed}}</li>
+                                    <li><i class="flaticon-bath-tub"></i>{{program?.bath}}</li>
+                                    <li><i class="flaticon-square"></i>{{program?.area}}</li>
+                                </ul>
+                                <p class="property-price">{{program?.price}}/<span>mois</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-6 col-md-6">
+                        <div class="property-card style2">
+                            <div class="property-img-slider">
+                                <img src="assets/img/property/property-10.jpg" alt="Image">
+                            </div>
+                            <div class="property-info">
+                                <div class="property-status-wrap">
+                                    <span class="property-status">For Rent</span>
+                                    <p class="property-price">$34,900/<span>month</span></p>
+                                </div>
+                                <h3><a routerLink="/listing-details">Villa In Luis Park</a></h3>
+                                <p><i class="flaticon-location"></i>64, 1st Aveneu, High Steet, USA</p>
+                                <ul class="property-metainfo list-style">
+                                    <li><i class="flaticon-double-bed"></i>06</li>
+                                    <li><i class="flaticon-bath-tub"></i>04</li>
+                                    <li><i class="flaticon-square"></i>3100 sqft</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> -->
+                   
+                </div>
+                <a routerLink="/listings-one" class="btn style1 mt-20">Afficher plus</a>
+            </div>
+            <div class="col-xl-4">
+                <div class="sidebar">
+                    <div class="sidebar-widget">
+                        <h4>Filtres</h4>
+                        <form class="filter-widget">
+                           
+                            <div class="form-group">
+                                <select name="category" id="category">
+                                    <option data-show="Filtrer par catégorie" value="0">Filtrer par catégorie</option>
+                                    <option value="1">Terrain</option>
+                                    <option value="2">Villa</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <select name="region" id="region">
+                                    <option data-show="Filtrer par zone" value="0">Filtrer par zone</option>
+                                    <option value="1">Bambilor</option>
+                                    <option value="2">Niakoul rap</option>
+                                    <option value="3">Keur Ndiaye Lo</option>
+                                    <option value="4">Dias</option>
+                                    <option value="5">Almadie 2</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <select name="region" id="region">
+                                    <option data-show="Filtrer par départemant" value="0">Filtrer par départemant</option>
+                                    <option value="1">Rufisque</option>
+                                    <option value="2">Dakar</option>
+                                    <option value="3">Thies</option>
+                                    <option value="4">Mbour</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <select name="city" id="city">
+                                    <option data-show="Filtrer par région" value="0">Filtrer par région</option>
+                                    <option value="1">Dakar</option>
+                                    <option value="2">Thies</option>
+                                    <option value="3">Saint-Louis</option>
+                                </select>
+                            </div>
+                            
+                           
+                            <div class="form-group">
+                                <select name="price_range" id="price_range">
+                                    <option data-show="Interval de prix" value="0">Interval de prix</option>
+                                    <option value="1">10.000 XOF - 100.000 XOF</option>
+                                    <option value="2">100.000 XOF - 1.000000 XOF</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                            <button class="btn style2 d-block w-100">Appliquer</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

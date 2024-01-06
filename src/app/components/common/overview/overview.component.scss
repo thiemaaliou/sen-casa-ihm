@@ -1,0 +1,102 @@
+.add-listing-bg {
+    background-image: url(../../../../assets/img/city/city-2.jpg);
+    height: 100%;
+}
+.add-listing-wrap {
+    padding: 50px;
+    .listing-content {
+        z-index: 1;
+        position: relative;
+        background-color: var(--clr_pome);
+        padding: {
+            left: 60px;
+            right: 30px;
+        };
+        .add-listing-shape{
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: -1;
+            height: 100%;
+            position: absolute;
+        }
+        .content-title {
+            margin-bottom: 25px;
+
+            h2 {
+                color: var(--clr_white);;
+            }
+            p {
+                color: var(--clr_offwhite);;
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .add-listing-bg {
+        height: 300px;
+    }
+    .add-listing-wrap {
+        .listing-content {
+            padding-left: 15px;
+    
+            .content-title {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .add-listing-wrap {
+        .listing-content {
+            padding: {
+                left: 20px;
+                right: 20px;
+            };
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .add-listing-wrap {
+        .listing-content {
+            padding: {
+                left: 25px;
+                right: 25px;
+            };
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {
+
+    .add-listing-wrap {
+        .container-fluid {
+            max-width: 1920px;
+        }
+    }
+    .add-listing-wrap {
+        .listing-content {
+            padding-right: 200px;
+        }
+    }
+
+}

@@ -1,0 +1,81 @@
+@mixin transition($time) {
+    -webkit-transition: all $time ease-in-out;
+    transition: all $time ease-in-out;
+}
+@mixin transform($tr_amt) {
+    -webkit-transform: $tr_amt;
+    -moz-transform: $tr_amt;
+    transform: $tr_amt;
+}
+
+.simple-card {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    @include transition(0.4s);
+    margin-bottom: 25px;
+
+    .simple-card-info {
+        padding: 25px;
+
+        h3 {
+            font-size: 22px;
+            margin: 0 0 15px;
+        }
+        p {
+            margin-bottom: 12px;
+        }
+    }
+    &:hover{
+        @include transform(translateY(-5px));
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .simple-card {
+        .simple-card-info {
+            padding: 18px;
+    
+            h3 {
+                font-size: 17px;
+                margin: 0 0 12px;
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .simple-card {
+        .simple-card-info {
+            padding: 20px;
+    
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .simple-card {
+        .simple-card-info {
+            padding: 20px;
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

@@ -1,0 +1,140 @@
+@import "../../common/latest-listings/latest-listings.component.scss";
+
+.filter-item-num, .filter-item-cat {
+    select {
+        width: 100%;
+        border: none;
+        height: 54px;
+        border: none;
+        color: #393939;
+        border-radius: 5px;
+        padding: 12px 15px 10px 15px;
+        background-color: var(--clr_seashell);
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: {
+            image: url(../../../../assets/img/down-arrow.png);
+            repeat: no-repeat;
+            position: 90% 60%;
+            size: 14px;
+        };
+    }
+}
+.sidebar {
+    .sidebar-widget {
+        z-index: 1;
+        padding: 25px;
+        margin: 0 0 30px;
+        position: relative;
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.09);
+
+        h4 {
+            line-height: 1;
+            position: relative;
+            margin: 0 0 25px;
+            font-size: 22px;
+        }
+        &:last-child {
+            margin: 0;
+        }
+    }
+}
+.filter-widget {
+    .form-group {
+        margin-bottom: 20px;
+
+        label {
+            display: block;
+            margin-bottom: 13px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+        input, textarea, select {
+            width: 100%;
+            border: none;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: var(--clr_seashell);
+        }
+        input, select {
+            height: 55px;
+        }
+        select {
+            opacity: 0.7;
+        }
+        input,textarea {
+            &::placeholder {
+                opacity: 0.7;
+            }
+        }
+        textarea {
+            height: 120px;
+            resize: none;
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .filter-item-num, .filter-item-cat {
+        margin-top: 15px;
+    }
+    .sidebar {
+        margin-top: 25px;
+
+        .sidebar-widget {
+            padding: 18px;
+            
+            h4 {
+                margin: 0 0 20px;
+                font-size: 18px;
+            }
+        }
+    }
+    .filter-widget {
+        .form-group {
+            label {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .sidebar {
+        margin-top: 25px;
+
+        .sidebar-widget {
+            padding: 22px;
+            
+            h4 {
+                font-size: 20px;
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .sidebar {
+        margin-top: 25px;
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}
