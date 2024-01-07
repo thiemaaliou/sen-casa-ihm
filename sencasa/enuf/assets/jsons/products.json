@@ -1,0 +1,210 @@
+{
+    "success": false,
+    "message": "",
+    "data": [
+        {
+            "reference": "PR-10001",
+            "category": "Villa",
+            "garages": "1",
+            "image": "assets/img/property/property-20.jpg",
+            "galerie": [
+                "assets/img/property/property-20.jpg",
+                "assets/img/property/property-1.jpg",
+                "assets/img/property/property-2.jpg",
+                "assets/img/property/property-4.jpg"
+            ],
+            "price": "18000000 F CFA",
+            "name": "Programme Keur gou mak",
+            "description": "Cette villa est équipée de la technologie la plus récente, y compris un système de sécurité avancé et un système de domotique pour contrôler l'éclairage, le chauffage et la climatisation. Un garage pour plusieurs véhicules, une buanderie et une salle de sport complètent cette résidence exceptionnelle.",
+            "location": "Bambilor",
+            "department": "Rufisque",
+            "municipality": "Bambilor",
+            "region": "Dakar",
+            "lat": "14,7996",
+            "lng": " -17,1836",
+            "bed": "3",
+            "bath": "2",
+            "area": "225m2",
+            "video": "",
+            "status": "A vendre",
+            "yearBuilt": "2022",
+            "details": {
+                "airConditioned": false,
+                "pool": false,
+                "guard": true,
+                "school": true,
+                "parking": true
+            }
+        },
+        {
+            "reference": "PR-10002",
+            "category": "Villa",
+            "garages": "1",
+            "image": "assets/img/property/property-1.jpg",
+            "galerie": [
+                "assets/img/property/property-20.jpg",
+                "assets/img/property/property-1.jpg",
+                "assets/img/property/property-2.jpg",
+                "assets/img/property/property-4.jpg"
+            ],
+            "price": "30000000 F CFA",
+            "name": "Programme Keur gou mak",
+            "description": "Cette villa est équipée de la technologie la plus récente, y compris un système de sécurité avancé et un système de domotique pour contrôler l'éclairage, le chauffage et la climatisation. Un garage pour plusieurs véhicules, une buanderie et une salle de sport complètent cette résidence exceptionnelle.",
+            "location": "Bambilor",
+            "department": "Rufisque",
+            "municipality": "Bambilor",
+            "region": "Dakar",
+            "lat": "14,7996",
+            "lng": " -17,1836",
+            "bed": "3",
+            "bath": "2",
+            "area": "225m2",
+            "video": "",
+            "status": "A vendre",
+            "yearBuilt": "2022",
+            "details": {
+                "airConditioned": false,
+                "pool": false,
+                "guard": true,
+                "school": true,
+                "parking": true
+            }
+        },
+        {
+            "reference": "PR-10003",
+            "category": "Villa",
+            "garages": "1",
+            "image": "assets/img/property/property-2.jpg",
+            "galerie": [
+                "assets/img/property/property-20.jpg",
+                "assets/img/property/property-1.jpg",
+                "assets/img/property/property-2.jpg",
+                "assets/img/property/property-4.jpg"
+            ],
+            "price": "18500000 F CFA",
+            "name": "Programme Keur gou mak",
+            "description": "Cette villa est équipée de la technologie la plus récente, y compris un système de sécurité avancé et un système de domotique pour contrôler l'éclairage, le chauffage et la climatisation. Un garage pour plusieurs véhicules, une buanderie et une salle de sport complètent cette résidence exceptionnelle.",
+            "location": "Bambilor",
+            "department": "Rufisque",
+            "municipality": "Bambilor",
+            "region": "Dakar",
+            "lat": "14,7996",
+            "lng": " -17,1836",
+            "bed": "3",
+            "bath": "2",
+            "area": "225m2",
+            "video": "",
+            "status": "A vendre",
+            "yearBuilt": "2022",
+            "details": {
+                "airConditioned": false,
+                "pool": false,
+                "guard": true,
+                "school": true,
+                "parking": true
+            }
+        },
+        {
+            "reference": "PR-10004",
+            "category": "Villa",
+            "garages": "1",
+            "image": "assets/img/property/property-3.jpg",
+            "galerie": [
+                "assets/img/property/property-20.jpg",
+                "assets/img/property/property-1.jpg",
+                "assets/img/property/property-2.jpg",
+                "assets/img/property/property-4.jpg"
+            ],
+            "price": "15000000 F CFA",
+            "name": "Programme Keur gou mak",
+            "description": "Cette villa est équipée de la technologie la plus récente, y compris un système de sécurité avancé et un système de domotique pour contrôler l'éclairage, le chauffage et la climatisation. Un garage pour plusieurs véhicules, une buanderie et une salle de sport complètent cette résidence exceptionnelle.",
+            "location": "Bambilor",
+            "department": "Rufisque",
+            "municipality": "Bambilor",
+            "region": "Dakar",
+            "lat": "14,7996",
+            "lng": " -17,1836",
+            "bed": "3",
+            "bath": "2",
+            "area": "225m2",
+            "video": "",
+            "status": "A vendre",
+            "yearBuilt": "2022",
+            "details": {
+                "airConditioned": false,
+                "pool": false,
+                "guard": true,
+                "school": true,
+                "parking": true
+            }
+        },
+        {
+            "reference": "PR-10005",
+            "category": "Villa",
+            "garages": "1",
+            "image": "assets/img/property/property-4.jpg",
+            "galerie": [
+                "assets/img/property/property-20.jpg",
+                "assets/img/property/property-1.jpg",
+                "assets/img/property/property-2.jpg",
+                "assets/img/property/property-4.jpg"
+            ],
+            "price": "25000000 F CFA",
+            "name": "Programme Keur gou mak",
+            "description": "Cette villa est équipée de la technologie la plus récente, y compris un système de sécurité avancé et un système de domotique pour contrôler l'éclairage, le chauffage et la climatisation. Un garage pour plusieurs véhicules, une buanderie et une salle de sport complètent cette résidence exceptionnelle.",
+            "location": "Bambilor",
+            "department": "Rufisque",
+            "municipality": "Bambilor",
+            "region": "Dakar",
+            "lat": "14,7996",
+            "lng": " -17,1836",
+            "bed": "3",
+            "bath": "2",
+            "area": "225m2",
+            "video": "",
+            "status": "A vendre",
+            "yearBuilt": "2022",
+            "details": {
+                "airConditioned": false,
+                "pool": false,
+                "guard": true,
+                "school": true,
+                "parking": true
+            }
+        },
+        {
+            "reference": "PR-10005",
+            "category": "Villa",
+            "garages": "1",
+            "image": "assets/img/property/property-4.jpg",
+            "galerie": [
+                "assets/img/property/property-20.jpg",
+                "assets/img/property/property-1.jpg",
+                "assets/img/property/property-2.jpg",
+                "assets/img/property/property-4.jpg"
+            ],
+            "price": "25000000 F CFA",
+            "name": "Programme Keur gou mak",
+            "description": "Cette villa est équipée de la technologie la plus récente, y compris un système de sécurité avancé et un système de domotique pour contrôler l'éclairage, le chauffage et la climatisation. Un garage pour plusieurs véhicules, une buanderie et une salle de sport complètent cette résidence exceptionnelle.",
+            "location": "Bambilor",
+            "department": "Rufisque",
+            "municipality": "Bambilor",
+            "region": "Dakar",
+            "lat": "14,7996",
+            "lng": " -17,1836",
+            "bed": "3",
+            "bath": "2",
+            "area": "225m2",
+            "video": "",
+            "status": "A vendre",
+            "yearBuilt": "2022",
+            "details": {
+                "airConditioned": false,
+                "pool": false,
+                "guard": true,
+                "school": true,
+                "parking": true
+            }
+        }
+    ]
+}

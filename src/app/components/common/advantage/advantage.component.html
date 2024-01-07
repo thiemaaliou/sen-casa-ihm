@@ -32,9 +32,9 @@
                         <div class="card">
                             <img src="{{program?.main_image}}" alt="">
                             <div class="card-content">
-                                <h4 class="title">{{program?.name}} à <span>{{program?.solde}} FCFA</span></h4>
+                                <h4 class="title">{{program?.name}} à <span>{{program?.solde | number}} FCFA</span></h4>
                                 <p class="location"><i class="ri-map-pin-4-fill"></i> {{program?.location}}</p>
-                                <p class="amount">Avec <span>{{program?.minimum_save}}</span>/jour pendant <span>{{program?.duration}}</span> mois</p>
+                                <p class="amount">Avec <span>{{program?.minimum_save | number}}</span>/jour pendant <span>{{program?.duration}}</span> mois</p>
                                 <div class="description-html" [innerHTML]="program?.description"></div>
                                 <div class="button">
                                     <button class="subscribe-button"  (click)="goToListing(program)">S'inscrire</button>

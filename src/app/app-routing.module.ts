@@ -21,7 +21,7 @@ const routes: Routes = [
     {path: 'about', component: AboutPageComponent},
     {path: 'listings-one', component: ListingsPageOneComponent},
     {path: 'listings', component: ListingsPageTwoComponent},
-    {path: 'listing-details', component: ListingDetailsPageComponent},
+    {path: 'listing-details/:id', component: ListingDetailsPageComponent},
     {path: 'how-it-works', component: HowItWorksPageComponent},
     {path: 'faq', component: FaqPageComponent},
     {path: 'testimonials', component: TestimonialsPageComponent},

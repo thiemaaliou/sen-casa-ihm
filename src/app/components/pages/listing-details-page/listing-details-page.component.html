@@ -1,19 +1,19 @@
 <!-- Breadcrumb -->
-<div class="breadcrumb-wrap bg-f br-1" style="background-image: url(assets/img/breadcrumb/breadcrumb-1.jpg);">
+<div class="breadcrumb-wrap bg-f br-1" [style]='"background-image: url("+property?.main_image+");"'>
     <div class="container">
         <div class="breadcrumb-title">
-            <h2>Listing Details</h2>
+            <h2>Details Villa N°  {{property?.id}}</h2>
             <ul class="breadcrumb-menu list-style">
-                <li><a routerLink="/index">Home </a></li>
-                <li><a routerLink="/listings-one">Property</a></li>
-                <li>Listing Details</li>
+                <li><a routerLink="/">Accueil </a></li>
+                <li>Villa N° {{property?.id}}</li>
+               
             </ul>
         </div>
     </div>
 </div>
 
 <!-- Property Details -->
-<div class="property-details-wrap pt-100 pb-75">
+<div class="property-details-wrap pt-100 pb-75" *ngIf="property">
     <div class="container">
         <div class="row">
             <div class="col-xl-8">
@@ -21,96 +21,91 @@
                     <div class="row align-items-start">
                         <div class="col-md-8">
                             <div class="property-title">
-                                <h2>Luxury &amp; Modern Apartment</h2>
+                                <h2>Villa N° {{property?.id}}</h2>
                                 <ul class="property-metainfo list-style">
-                                    <li><i class="flaticon-location"></i>64/A, Ist Aveneu, High Street, Florida, USA</li>
-                                    <li><i class="flaticon-square"></i>1310 Sqft</li>
+                                    <li><i class="flaticon-location"></i>Almadies 2 - Keur Massar - Dakar</li>
+                                    <li><i class="flaticon-square"></i>{{property?.area}} m<sup>2</sup></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <p class="property-price">$34,000 <span>/ month</span></p>
+                            <p class="property-price">{{property?.price | number}} <span> FCFA</span></p>
                         </div>
                     </div>
                     <div class="property-img">
-                        <img src="assets/img/property/single-property-1.jpg" alt="Image">
-                        <span class="property-status">For Rent</span>
+                        <owl-carousel-o [options]="heroPropertySlides">
+                            <ng-template carouselSlide *ngFor="let img of this.property?.images">
+                                <div class="property-card style1">
+                                    <div class="property-img">
+                                        <img src="{{img?.name}}" alt="Image">
+                                    </div>
+                                </div>
+                            </ng-template>
+                            
+                        </owl-carousel-o>
+                        <!-- <img src="assets/img/property/single-property-1.jpg" alt="Image"> -->
+                        <span class="property-status">{{property?.status}}</span>
                     </div>
                     <div class="property-desc">
-                        <ngx-view360 class="is-16by9" [options]="options" />
+                        <ngx-view360 class="is-16by9" [options]="options"  />
                         <h4>Description</h4>
-                        <p>Cras ultricies ligula sed magna dictum porta. Nulla quis lorem ut libero malesuada feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus. Curabitur arcu erat accumsan id imperdiet et, porttitor at sem. Curabitur arcu erat accumsan id imperdiet et porttitor.</p>
-                        <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Proin eget tortor risus. Donec rutrum congue leo eget malesuada. Pellentesque in ipsum id orci porta dapibus.</p>
+                        <p [innerHTML]="property?.description"></p>
                     </div>
                     <div class="property-desc">
-                        <h4>Property Details</h4>
+                        <h4> Details</h4>
                         <div class="row">
                             <div class="col-md-4">
                                 <ul class="property-features list-style">
-                                    <li>Property ID : <span>V25680</span></li>
-                                    <li>Property Price : <span>$34,000</span></li>
-                                    <li>Bath : <span>2</span></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-4">
-                                <ul class="property-features list-style">
-                                    <li>Property Type : <span>Apartment</span></li>
-                                    <li>Rooms : <span>6</span></li>
-                                    <li>Garages : <span>4</span></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-4">
-                                <ul class="property-features list-style">
-                                    <li>Property Status : <span>For Rent</span></li>
-                                    <li>Bedrooms ID : <span>10</span></li>
-                                    <li>Year Built : <span>14/02/22</span></li>
+                                    <li>Villa N° : <span> {{property?.id}}</span></li>
+                                    <li>Prix : <span>{{property?.price | number}} FCFA</span></li>
+                                    <li>Chambres : <span>4</span></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="property-desc">
-                        <h4>Floor Plans</h4>
+                        <h4>Plan</h4>
                         <div class="floor-plan">
                             <img src="assets/img/property/floor-plan.png" alt="Image">
                         </div>
                     </div>
                     <div class="property-desc">
-                        <h4>Property Features</h4>
+                        <h4>Autres informations</h4>
                         <div class="row">
                             <div class="col-md-4">
                                 <ul class="property-annuties list-style">
-                                    <li><i class="ri-checkbox-multiple-line"></i>Air Conditioned</li>
-                                    <li><i class="ri-checkbox-multiple-line"></i>Swimming Pool</li>
-                                    <li><i class="ri-checkbox-multiple-line"></i>Fitness Gym </li>
+                                    <li><i class="ri-checkbox-multiple-line"></i>Hopital</li>
+                                    <li><i class="ri-checkbox-multiple-line"></i>Air de jeux</li>
+                                    <li><i class="ri-checkbox-multiple-line"></i>Fitness </li>
                                 </ul>
                             </div>
                             <div class="col-md-4">
                                 <ul class="property-annuties list-style">
-                                    <li><i class="ri-checkbox-multiple-line"></i>Security Garage </li>
-                                    <li><i class="ri-checkbox-multiple-line"></i>Window Coverings </li>
-                                    <li><i class="ri-checkbox-multiple-line"></i>Laundry</li>
+                                    <li><i class="ri-checkbox-multiple-line"></i>Elementaire </li>
+                                    <li><i class="ri-checkbox-multiple-line"></i>Lycée</li>
+                                    <li><i class="ri-checkbox-multiple-line"></i>Prescolaire</li>
                                 </ul>
                             </div>
                             <div class="col-md-4">
                                 <ul class="property-annuties list-style">
                                     <li><i class="ri-checkbox-multiple-line"></i>Parking</li>
-                                    <li><i class="ri-checkbox-multiple-line"></i>Fireplace</li>
-                                    <li><i class="ri-checkbox-multiple-line"></i>Refrigerator</li>
+                                    <li><i class="ri-checkbox-multiple-line"></i>Marche</li>
+                                    <li><i class="ri-checkbox-multiple-line"></i>Garage</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="property-desc">
-                        <h4>Property Video</h4>
+                        <h4>Video</h4>
                         <div class="property-video">
                             <img src="assets/img/property/single-property-2.jpg" alt="Image">
-                            <button type="button" class="play-video" (click)="openPopup()">
+                            <button type="button" class="play-video">
                                 <span class="play-now icon"><i class="flaticon-play-1"></i>
                                 <span class="ripple"></span></span>
                             </button>
                         </div>
                     </div>
-                    <div class="property-desc">
+                    <!-- <div class="property-desc">
                         <h4>3 Reviews</h4>
                         <div class="property-review comment-item-wrap">
                             <div class="comment-item">
@@ -222,8 +217,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="property-desc">
+                    </div> -->
+                    <!-- <div class="property-desc">
                         <h4>Add Your Review</h4>
                         <form class="review-form">
                             <div class="row">
@@ -287,8 +282,8 @@
                                 </div>
                             </div>
                         </form>
-                    </div>
-                    <div class="property-desc">
+                    </div> -->
+                    <!-- <div class="property-desc">
                         <h4>Similar Property</h4>
                         <div class="row">
                             <div class="col-lg-6 col-md-6">
@@ -332,112 +327,85 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="col-xl-4">
                 <div class="sidebar">
                     <div class="sidebar-widget">
-                        <h4>Book This Apartment</h4>
-                        <form action="#" class="filter-widget">
+                        <h4>Acheter cette maison</h4>
+                        <form [formGroup]="userForm" class="filter-widget">
                             <div class="form-group">
-                                <input type="text" placeholder="Full Name">
+                                <input id="firstName" formControlName="first_name" type="text" placeholder="Prénom">
                             </div>
                             <div class="form-group">
-                                <input type="number" placeholder="Phone Number">
+                                <input id="lastName" formControlName="last_name" type="text" placeholder="Nom">
                             </div>
                             <div class="form-group">
-                                <input type="email" placeholder="Email Address">
+                                <input id="phone" formControlName="phone" type="number" placeholder="Téléphone">
                             </div>
                             <div class="form-group">
-                                <select name="category" id="category">
-                                    <option data-show="Family Members" value="0">Family Members</option>
-                                    <option value="1">2</option>
-                                    <option value="2">4</option>
-                                    <option value="3">6</option>
-                                </select>
+                                <input id="email" formControlName="email" type="email" placeholder="Email">
                             </div>
                             <div class="form-group">
-                                <select name="region" id="region">
-                                    <option data-show="Children" value="0">Children</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
+                                <input id="profession" formControlName="profession" type="text" placeholder="Profession">
                             </div>
                             <div class="form-group">
-                                <textarea name="booking_msg" id="booking_msg" cols="30" rows="10" placeholder="Your Message"></textarea>
+                                <input id="address" formControlName="address" type="text" placeholder="Adresse">
                             </div>
+                            
                             <div class="form-group">
-                                <button class="btn style2">Request Booking</button>
+                                <button class="btn style2" (click)="addClientAccount()">Envoyer</button>
                             </div>
                         </form>
                     </div>
                     <div class="sidebar-widget">
-                        <h4>Recent Properties</h4>
-                        <div class="property-thumb-item">
+                        <h4>Autres biens</h4>
+                        <div class="property-thumb-item" *ngFor="let prop of properties">
                             <div class="property-thumb-img">
-                                <img src="assets/img/blog/post-thumb-1.jpg" alt="Image">
+                                <img src="{{prop?.main_image}}" alt="Image">
                             </div>
                             <div class="property-thumb-info">
-                                <h6><a routerLink="/listing-details">Luxury Villa In Rigo Park</a></h6>
-                                <p>$34,000 <span>/month</span></p>
-                            </div>
-                        </div>
-                        <div class="property-thumb-item">
-                            <div class="property-thumb-img">
-                                <img src="assets/img/blog/post-thumb-2.jpg" alt="Image">
-                            </div>
-                            <div class="property-thumb-info">
-                                <h6><a routerLink="/listing-details">Apartment With 3 BHK</a></h6>
-                                <p>$21,000 <span>/month</span></p>
-                            </div>
-                        </div>
-                        <div class="property-thumb-item">
-                            <div class="property-thumb-img">
-                                <img src="assets/img/blog/post-thumb-3.jpg" alt="Image">
-                            </div>
-                            <div class="property-thumb-info">
-                                <h6><a routerLink="/listing-details">Ready Flat For Rent</a></h6>
-                                <p>$14,000 <span>/month</span></p>
+                                <h6><a routerLink="/listing-details">Villa Numero {{prop?.property_number}}</a></h6>
+                                <p>{{prop?.price | number}} <span> FCFA</span></p>
                             </div>
                         </div>
                     </div>
                     <div class="sidebar-widget">
-                        <h4>Agent Information</h4>
+                        <h4>Contacts</h4>
                         <div class="agent-info-box">
                             <div class="agent-name-wrap">
                                 <div class="agent-img">
-                                    <img src="assets/img/clients/client-1.jpg" alt="Image">
+                                    <img src="assets/img/partner/senecasa-logo.png" alt="Image">
                                 </div>
                                 <div class="agent-name">
-                                    <h6><a href="agent-details.html">Jayden Gabrien</a></h6>
-                                    <span>Senior Sales Manager</span>
+                                    <h6><a href="agent-details.html">SARTORISEN CASA</a></h6>
+                                    <span>Agence immobilière</span>
                                 </div>
                             </div>
                             <ul class="agent-address list-style">
-                                <li><i class="ri-map-pin-line"></i>302 Ave PArk, New York</li>
-                                <li><i class="ri-phone-line"></i>+222 023 4563 123</li>
-                                <li><i class="ri-mail-send-line"></i>info@jaiden.com</li>
+                                <li><i class="ri-map-pin-line"></i>Nord foire azur 1, Villa 59, Dakar -Sénégal</li>
+                                <li><i class="ri-phone-line"></i>(+221) 33 868 12 78 / (+221) 78 151 48 48</li>
+                                <li><i class="ri-mail-send-line"></i>contact@senecasa.com</li>
                             </ul>
                             <form action="#" class="agent-contact">
                                 <div class="form-group">
-                                    <input type="text" placeholder="Full Name">
+                                    <input type="text" placeholder="Nom complet">
                                 </div>
                                 <div class="form-group">
-                                    <input type="number" placeholder="Phone Number">
+                                    <input type="number" placeholder="Téléphone">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" placeholder="Email Address">
+                                    <input type="text" placeholder="Email ">
                                 </div>
                                 <div class="form-group">
-                                   <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Your Message"></textarea>
+                                   <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Votre Message"></textarea>
                                 </div>
-                                <button class="btn style2">Submit Request</button>
+                                <button class="btn style2">Envoyer une demande</button>
                             </form>
                         </div>
                     </div>
-                    <div class="sidebar-widget">
+                    <!-- <div class="sidebar-widget">
                         <h4>Popular Tags</h4>
                         <ul class="tag-list list-style">
                             <li><a routerLink="/listings-one">Houses</a></li>
@@ -448,7 +416,7 @@
                             <li><a routerLink="/listings-one">Luxury</a></li>
                             <li><a routerLink="/listings-one">Property</a></li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

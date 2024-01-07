@@ -12,4 +12,16 @@ export class ProgramService {
   getPrograms(){
     return this.http.get(`${environment.apiUrl}casa/program`).pipe(response => response)
   }
+
+  getProperties(){
+    return this.http.get(`${environment.apiUrl}casa/properties`).pipe(response => response)
+  }
+
+  addClientAccount(account: any){
+    return this.http.post(`${environment.apiUrl}casa/client/account`, account).pipe(response => response)
+  }
+
+  addSubscription(data: any){
+    return this.http.post(`${environment.apiUrl}casa/subscription/new`, data).pipe(response => response)
+  }
 }

@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { LOCALE_ID, NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { NgxScrollTopModule } from 'ngx-scrolltop';
 import { CarouselModule } from 'ngx-owl-carousel-o';
@@ -9,6 +9,8 @@ import { MdbDropdownModule } from 'mdb-angular-ui-kit/dropdown';
 import { MdbAccordionModule } from 'mdb-angular-ui-kit/accordion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+
+import { ToastrModule } from 'ngx-toastr';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -92,6 +94,7 @@ import { MdbModalModule } from 'mdb-angular-ui-kit/modal';
     ],
     imports: [
         FormsModule,
+        ReactiveFormsModule,
         RouterModule,
         BrowserModule,
         MdbTabsModule,
@@ -105,10 +108,17 @@ import { MdbModalModule } from 'mdb-angular-ui-kit/modal';
 
         NgxView360Module,
 
-        HttpClientModule
+        HttpClientModule,
+        
+        ToastrModule.forRoot({
+            timeOut: 3000,
+            positionClass: 'toast-top-right',
+            preventDuplicates: true
+        }),
     ],
     providers: [
-        ProgramService
+        ProgramService,
+        // {provide: LOCALE_ID, useValue: 'fr-FR' }
     ],
     bootstrap: [AppComponent]
 })
