@@ -3,20 +3,60 @@
         <owl-carousel-o [options]="heroSlidesTwo">
             <ng-template carouselSlide>
                 <div class="hero-slide-item bg-f" style="background-image: url(assets/img/hero/hero-slider-4.jpg);"></div>
+                <div class="slide-content hero-content">
+                    <div class="col-lg-4 col-md-4 col-xs-12 col-sm-12 left">
+                        <h1> <span class="primary-color">PROJET DIASS </span> <br> VILLE NOUVELLE</h1>
+                        <button class="btn style4" (click)="showMoreAboutText()">En savoir plus</button>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-xs-12 col-sm-12 right">
+                        <div class="d-flex img-container">
+                            <div class="d-flex justify-center">
+                                <img src="../../../../../assets/img/about/aibd.png" alt="">
+                            </div>
+                            <div class="d-flex justify-around">
+                                <img src="../../../../../assets/img/about/mbour.png" alt="">
+                                <img src="../../../../../assets/img/about/ndayane.png" alt="">
+                            </div>
+                            <div class="d-flex justify-center">
+                                <img src="../../../../../assets/img/about/kirene.png" alt="">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
             </ng-template>
             <ng-template carouselSlide>
                 <div class="hero-slide-item bg-f" style="background-image: url(assets/img/hero/hero-slider-5.jpg);"></div>
+                <div class="hero-content style-two row">
+                    <div class="col-lg-4 col-md-4 col-xs-12 col-sm-12 left">
+                        <h1> Non loin de  <br><span class="primary-color">L'AIBD et du port </span> de Ndayane </h1>
+                        <button class="btn style4" (click)="showMoreAboutText()">En savoir plus</button>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-xs-12 col-sm-12 right">
+                        <img src="../../../../../assets/img/about/aibd.png" alt="">
+                    </div>
+                </div>
             </ng-template>
             <ng-template carouselSlide>
                 <div class="hero-slide-item bg-f" style="background-image: url(assets/img/hero/hero-slider-6.jpg);"></div>
+                <div class="hero-content style-two row">
+                    <div class="col-lg-4 col-md-4 col-xs-12 col-sm-12 left">
+                        <h1> Environ  <br><span class="primary-color"> 70 KM  </span> de la ville de Dakar <br> </h1>
+                        <button class="btn style4" (click)="showMoreAboutText()">En savoir plus</button>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-xs-12 col-sm-12 right">
+                        <img src="../../../../../assets/img/about/aibd.png" alt="">
+                    </div>
+                </div>
             </ng-template>
         </owl-carousel-o>
     </div>
     <div class="hero-content">
         <div class="row">
-            <div class="col-xxl-8 offset-xxl-2 col-xl-10 offset-xl-1 col-lg-10 offset-lg-1">
+            <!-- <div class="col-xxl-8 offset-xxl-2 col-xl-10 offset-xl-1 col-lg-10 offset-lg-1">
                 <h1> <span class="primary-color">NATT</span>-K&Euml;R <br> Sa keur si lou yomb</h1>
-                <!-- <p>Proin gravida nibh vel velit auctor aliquet aenean sollicitudin lorem quis bibendum auctor nisi elit consequat ipsum nec sagittis sem nibh id elit Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+                <!-- <p>Proin gravida nibh vel velit auctor aliquet aenean sollicitudin lorem quis bibendum auctor nisi elit consequat ipsum nec sagittis sem nibh id elit Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
                 <form class="property-search-form">
                     <div class="form-group-wrap">
                         <div class="form-group">
@@ -40,16 +80,7 @@
                     </div>
                     <button type="submit" class="btn style2">Recherche</button>
                 </form>
-                <!-- <div class="client-feedback">
-                    <ul class="list-style">
-                        <li><a routerLink="/testimonials"><img src="assets/img/clients/client-1.jpg" alt="Image"></a></li>
-                        <li><a routerLink="/testimonials"><img src="assets/img/clients/client-2.jpg" alt="Image"></a></li>
-                        <li><a routerLink="/testimonials"><img src="assets/img/clients/client-3.jpg" alt="Image"></a></li>
-                        <li><a routerLink="/testimonials"><img src="assets/img/clients/client-4.jpg" alt="Image"></a></li>
-                    </ul>
-                    <span>29k Positive Review</span>
-                </div> -->
-            </div>
+            </div> -->
         </div>
     </div>
 </div>

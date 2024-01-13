@@ -1,0 +1,14 @@
+@mixin transform($tr_amt) {
+    -webkit-transform: $tr_amt;
+    -moz-transform: $tr_amt;
+    transform: $tr_amt;
+}
+.about-content{
+    padding: 0 20px;
+    p{
+        text-align: justify;
+    }
+    .content-feature-list{
+        padding: 20px 0;
+    }
+}

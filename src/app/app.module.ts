@@ -53,6 +53,7 @@ import { ContactComponent } from './components/common/contact/contact.component'
 import { NgxView360Module } from "@egjs/ngx-view360";
 import { ProgramService } from './services/program.service';
 import { MdbModalModule } from 'mdb-angular-ui-kit/modal';
+import { SortDescriptionComponent } from './components/common/sort-description/sort-description.component';
 
 @NgModule({
     declarations: [
@@ -90,7 +91,8 @@ import { MdbModalModule } from 'mdb-angular-ui-kit/modal';
         BlogDetailsPageComponent,
         ContactPageComponent,
         ProfileAuthenticationPageComponent,
-        ContactComponent
+        ContactComponent,
+        SortDescriptionComponent
     ],
     imports: [
         FormsModule,

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MdbModalRef, MdbModalService } from 'mdb-angular-ui-kit/modal';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { SortDescriptionComponent } from 'src/app/components/common/sort-description/sort-description.component';
 
 @Component({
     selector: 'app-homethree-banner',
@@ -7,8 +9,9 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
     styleUrls: ['./homethree-banner.component.scss']
 })
 export class HomethreeBannerComponent implements OnInit {
-
-    constructor() { }
+    modalRef: MdbModalRef<SortDescriptionComponent> | null = null;
+    
+    constructor(private modalService: MdbModalService) { }
 
     ngOnInit(): void {}
 
@@ -18,10 +21,14 @@ export class HomethreeBannerComponent implements OnInit {
         dots: true,
         loop: true,
         navText: ['<i class="flaticon-back"></i>', '<i class="flaticon-next-1"></i>'],
-        autoplay: true,
+        autoplay: false,
         smartSpeed: 1300,
-        autoplayTimeout: 4000,
-        autoplayHoverPause: false
+        autoplayTimeout: 10000,
+        autoplayHoverPause: true
+    }
+
+    showMoreAboutText(){
+        this.modalRef = this.modalService.open(SortDescriptionComponent);
     }
 
 }
