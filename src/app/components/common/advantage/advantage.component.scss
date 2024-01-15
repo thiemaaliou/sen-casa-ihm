@@ -6,7 +6,7 @@
 .section-title{
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     flex-direction: column;
     .main-bg-title{
         background: var(--clr_pome);
