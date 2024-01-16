@@ -15,6 +15,7 @@ import { PrivacyPolicyPageComponent } from './components/pages/privacy-policy-pa
 import { ProfileAuthenticationPageComponent } from './components/pages/profile-authentication-page/profile-authentication-page.component';
 import { TermsOfServicePageComponent } from './components/pages/terms-of-service-page/terms-of-service-page.component';
 import { TestimonialsPageComponent } from './components/pages/testimonials-page/testimonials-page.component';
+import { DiassSaafiComponent } from './components/pages/projets/about-page copy/diass-saafi.component';
 
 const routes: Routes = [
     {path: '', component: HomeDemoOneComponent},
@@ -31,6 +32,7 @@ const routes: Routes = [
     {path: 'blog-details', component: BlogDetailsPageComponent},
     {path: 'profile-authentication', component: ProfileAuthenticationPageComponent},
     {path: 'contact', component: ContactPageComponent},
+    {path: 'projets/diass-saafi', component: DiassSaafiComponent},
     // Here add new pages component
 
     {path: '**', component: NotFoundComponent} // This line will remain down from the whole pages component list

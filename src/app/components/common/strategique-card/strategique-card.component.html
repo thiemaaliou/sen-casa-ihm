@@ -1,0 +1,97 @@
+<!-- Default Testimonials -->
+<div
+    class="testimonial-wrap style2 ptb-100 bg-seashell"
+    [ngClass]="{'d-none': router.url === '/index-2' || router.url === '/index-3'}"
+>
+    <div class="container">
+       <div class="row">
+            <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
+                <div class="section-title style1 text-center mb-40">
+                    <h4>DIASS Position stratégique</h4>
+                    <p>La commune de Diass, compte tenu de sa position stratégique liée aux nombreuses infrastructures qui sont dans son périmètre communal, devient de plus en plus une ville moderne </p>
+                </div>
+            </div>
+       </div>
+    </div>
+    <div class="container-fluid">
+        <div class="testimonial-slider-two">
+            <owl-carousel-o [options]="testimonialSlidesTwo">
+                <ng-template carouselSlide>
+                    <div class="testimonial-card style2">
+                        <h6>Aéroport International Blaise Diagne</h6>
+                        <img src="../../../../assets/img/about/aibd.jpg" alt="AIBD">
+                        <!-- <p class="client-quote">
+                            Lorem ipsum dolor sit amet adip elitions repellat tetur delni vel quam aliq earum explibo dolor eme fugiat enim illumon amet sit.
+                        </p> -->
+                        <!-- <div class="client-info-wrap">
+                            <div class="client-img">
+                                <img src="../../../../assets/img/about/aibd.jpg" alt="AIBD">
+                            </div>
+                            <div class="client-info">
+                                <span>AIBD</span>
+                            </div>
+                            <div class="ratings">
+                                <i class="flaticon-star"></i>
+                                4.8
+                            </div>
+                        </div> -->
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="testimonial-card style2">
+                        <h6>Le port de Ndayane</h6>
+                       <img src="../../../../assets/img/about/port-ndayane.jpg" alt="">
+                        <!-- <div class="client-info-wrap">
+                            <div class="client-img">
+                                <img src="assets/img/clients/client-3.jpg" alt="Image">
+                            </div>
+                            <div class="client-info">
+                                <h5>Tom Haris</h5>
+                                <span>Civil Engineer, Olleo</span>
+                            </div>
+                            <div class="ratings">
+                                <i class="flaticon-star"></i>
+                                4.8
+                            </div>
+                        </div> -->
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="testimonial-card style2">
+                        <h6>Les Zones Economiques Spéciales Intégrées du Sénégal (ZESI)</h6>
+                        <img src="../../../../assets/img/about/zesid.png" alt="">
+                    </div>
+                </ng-template>
+
+                <ng-template carouselSlide>
+                    <div class="testimonial-card style2">
+                        <h6>A ~ 70 KM de Dakar</h6>
+                        <img src="../../../../assets/img/about/dakar.png" alt="">
+                    </div>
+                </ng-template>
+
+                <ng-template carouselSlide>
+                    <div class="testimonial-card style2">
+                        <h6>Kir&egrave;ne agro-business</h6>
+                        <img src="../../../../assets/img/about/agor-business.jpg" alt="">
+                    </div>
+                </ng-template>
+
+                <ng-template carouselSlide>
+                    <div class="testimonial-card style2">
+                        <h6>Les industries ciment du sahel</h6>
+                        <img src="../../../../assets/img/about/soccocim.jpg" alt="">
+                    </div>
+                </ng-template>
+
+                <ng-template carouselSlide>
+                    <div class="testimonial-card style2">
+                        <h6>Non loin de Mbour</h6>
+                        <img src="../../../../assets/img/about/mbour.webp" alt="">
+                    </div>
+                </ng-template>
+               
+            </owl-carousel-o>
+        </div>
+    </div>
+</div>

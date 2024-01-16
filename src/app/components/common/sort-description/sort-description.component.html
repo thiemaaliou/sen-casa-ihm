@@ -26,14 +26,14 @@ durabilité, l'inclusion communautaire et le développement équilibré, le proj
 urbain harmonieux pour les générations actuelles et futures de la communauté de Diass.
                         </p>
                     </div>
-                    <ul class="content-feature-list list-style">
+                    <ul class="content-feature-list list-style" *ngIf="!router.url.includes('projets/')">
                         <li><i class="flaticon-checked"></i> Les Zones Economiques Spéciales Intégrées du Sénégal (ZESI)</li>
                         <li><i class="flaticon-checked"></i>Aéroport International Blaise Diagne (AIBD).</li>
                         <li><i class="flaticon-checked"></i>Port de Ndayane</li>
                         <li><i class="flaticon-checked"></i>Les industries Ciment du Sahel  Kiréne Agro-Business</li>
                         <li><i class="flaticon-checked"></i>A 70 KM de Dakar</li>
                     </ul>
-                    <button class="btn style2">Fermer</button>
+                    <button class="btn style2"  *ngIf="!router.url.includes('projets/')">Fermer</button>
                 </div>
             </div>
         </div>

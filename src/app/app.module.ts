@@ -54,6 +54,8 @@ import { NgxView360Module } from "@egjs/ngx-view360";
 import { ProgramService } from './services/program.service';
 import { MdbModalModule } from 'mdb-angular-ui-kit/modal';
 import { SortDescriptionComponent } from './components/common/sort-description/sort-description.component';
+import { DiassSaafiComponent } from './components/pages/projets/about-page copy/diass-saafi.component';
+import { StrategiquelCardComponent } from './components/common/strategique-card/strategique-card.component';
 
 @NgModule({
     declarations: [
@@ -92,7 +94,10 @@ import { SortDescriptionComponent } from './components/common/sort-description/s
         ContactPageComponent,
         ProfileAuthenticationPageComponent,
         ContactComponent,
-        SortDescriptionComponent
+        SortDescriptionComponent,
+
+        DiassSaafiComponent,
+        StrategiquelCardComponent
     ],
     imports: [
         FormsModule,
