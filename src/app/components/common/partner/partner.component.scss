@@ -6,12 +6,15 @@
     text-align: center;
     
     img {
-        opacity: 0.4;
+        opacity: 0.8;
         display: block;
         margin: 0 auto;
         max-width: 150px;
-        filter:grayscale(100%);
+        filter:grayscale(5%);
         @include transition(0.4s);
+        height: 200px;
+        object-fit: contain;
+        // width: 100%;
     }
     &:hover {
         img {

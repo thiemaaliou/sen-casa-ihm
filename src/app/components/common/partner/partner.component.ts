@@ -7,7 +7,14 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
     styleUrls: ['./partner.component.scss']
 })
 export class PartnerComponent implements OnInit {
-
+    partners = [
+        {"name": "ECOBANK", "logo": "ecobank.png"},
+        {"name": "SARTORISEN", "logo": "sartorisen.png"},
+        {"name": "COMMUNE DE DIASS", "logo": "commune-diass.png"},
+        {"name": "BNDE DAKAR", "logo": "bnde.jpg"},
+        {"name": "ABASUS HOLDING", "logo": "abasus-holding.png"},
+        {"name": "XAMLEMA", "logo": "xamlema.jpg"}
+    ]
     constructor() { }
 
     ngOnInit(): void {}
