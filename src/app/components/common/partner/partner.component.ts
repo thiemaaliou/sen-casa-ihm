@@ -13,7 +13,8 @@ export class PartnerComponent implements OnInit {
         {"name": "COMMUNE DE DIASS", "logo": "commune-diass.png"},
         {"name": "BNDE DAKAR", "logo": "bnde.jpg"},
         {"name": "ABASUS HOLDING", "logo": "abasus-holding.png"},
-        {"name": "XAMLEMA", "logo": "xamlema.jpg"}
+        {"name": "XAMLEMA", "logo": "xamlema.jpg"},
+        {"name": "B H S", "logo": "bhs-logo.png"}
     ]
     constructor() { }
 

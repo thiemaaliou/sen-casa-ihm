@@ -16,7 +16,7 @@ export class AdvantageComponent implements OnInit {
     "/assets/img/partner/om-logo.png",
     "/assets/img/partner/upay-logo.png",
     "/assets/img/partner/sartorisen-logo.png",
-    "/assets/img/partner/senecasa-logo.png"
+    "/assets/img/partner/senecasa-logo.png",
   ];
   modalRef: MdbModalRef<ContactComponent> | null = null;
   programs: any[] = [];
