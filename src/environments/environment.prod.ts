@@ -1,4 +1,6 @@
 export const environment = {
   production: true,
-  apiUrl: 'https://api-sama-keur.cin-soft.com/api/'
+  apiUrl: 'https://api.natt-ker.com/api/',
+    imagesApiUrl: 'https://api.natt-ker.com/images/',
+  filesApiUrl: 'https://api.natt-ker.com/files/'
 };

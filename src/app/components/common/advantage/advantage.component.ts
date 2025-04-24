@@ -3,6 +3,7 @@ import { MdbModalRef, MdbModalService } from 'mdb-angular-ui-kit/modal';
 import { ContactComponent } from '../contact/contact.component';
 import { ProgramService } from 'src/app/services/program.service';
 import { Router } from '@angular/router';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-advantage',
@@ -20,6 +21,7 @@ export class AdvantageComponent implements OnInit {
   ];
   modalRef: MdbModalRef<ContactComponent> | null = null;
   programs: any[] = [];
+  imageApiUrl: string = environment.imagesApiUrl
   constructor(private modalService: MdbModalService, private programService: ProgramService, private router: Router) { }
 
   ngOnInit(): void {

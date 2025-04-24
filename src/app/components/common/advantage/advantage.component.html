@@ -4,7 +4,7 @@
             <div class="main-bg-title">
                 <!-- <sup>AK</sup> -->
                 <h2 id="main-title">AVANTAGES</h2>
-                
+
             </div>
             <!-- <div class="sec-bg-title">
                 <h4 class="secondary-title">2000<sub>FCFA</sub></h4>
@@ -54,7 +54,7 @@
                 </p> -->
                 <div class="vision-content">
                     <strong class="pt-30">Elle s’articule autour du développement économique et social
-                    par :  </strong> 
+                    par :  </strong>
                     <ul class="content-feature-list list-style pt-20">
                         <li>
                             <i class="flaticon-checked"></i> Le développement
@@ -89,7 +89,7 @@
                         *ngFor="let program of programs"
                     >
                         <div class="card">
-                            <img src="{{ program?.main_image }}" alt="" />
+                            <img src="{{imageApiUrl}}{{ program?.images[0]?.name }}" alt="" />
                             <div class="card-content">
                                 <h4 class="title">
                                     {{ program?.name }} à

@@ -10,7 +10,7 @@ export class ProgramService {
   constructor(private http: HttpClient) { }
 
   getPrograms(){
-    return this.http.get(`${environment.apiUrl}casa/program`).pipe(response => response)
+    return this.http.get(`${environment.apiUrl}casa/programs`).pipe(response => response)
   }
 
   getProperties(){
