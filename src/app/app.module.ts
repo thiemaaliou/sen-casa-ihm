@@ -56,6 +56,7 @@ import { MdbModalModule } from 'mdb-angular-ui-kit/modal';
 import { SortDescriptionComponent } from './components/common/sort-description/sort-description.component';
 import { DiassSaafiComponent } from './components/pages/projets/about-page copy/diass-saafi.component';
 import { StrategiquelCardComponent } from './components/common/strategique-card/strategique-card.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
     declarations: [
@@ -124,6 +125,10 @@ import { StrategiquelCardComponent } from './components/common/strategique-card/
         }),
     ],
     providers: [
+        {
+            provide: LocationStrategy,
+            useClass: HashLocationStrategy
+          },
         ProgramService,
         // {provide: LOCALE_ID, useValue: 'fr-FR' }
     ],
